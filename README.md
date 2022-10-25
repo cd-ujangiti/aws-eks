@@ -1,3 +1,5 @@
+**Creating a VPC for your Amazon EKS cluster**
+
 **Only Public Subnets:**
 
 This VPC has three public subnets that are deployed into different Availability Zones in an AWS Region. All nodes are automatically assigned public IPv4 addresses and can send and receive internet traffic through an internet gateway. A security group is deployed that denies all inbound traffic and allows all outbound traffic. The subnets are tagged so that Kubernetes can deploy load balancers to them.
